@@ -485,3 +485,30 @@ body {
   left: calc(100% * var(--randX, .5));
   transition: transform 0.2s linear;
 }
+
+.grade-card {
+  background: linear-gradient(135deg, rgba(14,165,132,0.08), rgba(245,158,11,0.08));
+  border: 1px solid rgba(14,165,132,0.1);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(11,17,36,0.05);
+}
+.grade-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(14,165,132,0.15);
+  background: linear-gradient(135deg, rgba(14,165,132,0.15), rgba(245,158,11,0.15));
+}
+.grade-card h3 {
+  margin-bottom: 0.8rem;
+  color: #071428;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.grade-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products – Infinity Auto Comp</title>
+  <title>Magnetic Products – Infinity Auto Comp</title>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
 </head>
 <body>
+  <!-- Animated Background -->
   <div class="bg-orbs">
     <div class="orb orb1"></div>
     <div class="orb orb2"></div>
@@ -22,48 +23,114 @@
       </a>
       <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="products.html" class="nav-link">Products</a>
         <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link cta">Contact</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
-
-      <div id="hamburger" class="hamburger">
-        <span></span><span></span><span></span>
-      </div>
     </div>
-
-    <nav id="mobileNav" class="mobile-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="overlay" class="overlay"></div>
   </header>
 
-  <main class="container products-page fade-up">
-    <section class="section-header fade-up">
-      <h1>Our Products</h1>
-      <p>Browse categories and detailed product descriptions.</p>
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="text-align:center; padding:5rem 1rem;">
+      <h2 style="font-size:2.5rem; font-weight:700; color:#071428;">Magnetic Excellence. Engineered for Performance.</h2>
+      <p style="max-width:700px; margin:1rem auto; color:var(--muted); font-size:1.1rem;">
+        Infinity Auto Comp brings precision-engineered magnetic products trusted by industries for efficiency, durability, and innovation.
+      </p>
     </section>
 
-    <section class="product-section fade-up">
-      <div class="filters">
-        <label>Filter:
-          <select id="category-filter">
-            <option value="all">All</option>
-            <option value="engine">Engine</option>
-            <option value="suspension">Suspension</option>
-            <option value="brake">Brake</option>
-            <option value="electrical">Electrical</option>
-          </select>
-        </label>
-        <input id="search" placeholder="Search products..." />
+    <!-- Product Grid -->
+    <section class="product-grid container" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; padding:2rem 1rem;">
+      <div class="card">
+        <img src="img/product-disc.svg" alt="NdFeB Magnet" style="width:80px; margin:auto; display:block;">
+        <h3>NdFeB Magnet</h3>
+        <p>High-strength Neodymium-Ferrum-Boron magnets offering exceptional energy density and performance for advanced assemblies.</p>
       </div>
+      <div class="card">
+        <img src="img/product-arm.svg" alt="Ferrite Magnet" style="width:80px; margin:auto; display:block;">
+        <h3>Ferrite Magnet</h3>
+        <p>Reliable and cost-effective magnets with strong resistance to demagnetization, ideal for motors and sensors.</p>
+      </div>
+      <div class="card">
+        <img src="img/product-mount.svg" alt="SmCo Magnet" style="width:80px; margin:auto; display:block;">
+        <h3>SmCo Magnet</h3>
+        <p>Samarium–Cobalt magnets designed for high-temperature stability and corrosion resistance in demanding environments.</p>
+      </div>
+      <div class="card">
+        <img src="img/product-pulley.svg" alt="AlNiCo Magnet" style="width:80px; margin:auto; display:block;">
+        <h3>AlNiCo Magnet</h3>
+        <p>Aluminum–Nickel–Cobalt magnets known for excellent temperature tolerance and consistent magnetic field strength.</p>
+      </div>
+      <div class="card">
+        <img src="img/product-rod.svg" alt="Magnetic Assemblies" style="width:80px; margin:auto; display:block;">
+        <h3>Magnetic Assemblies</h3>
+        <p>Customized magnetic assemblies integrating precision components for efficient motion and sensing applications.</p>
+      </div>
+    </section>
 
-      <div class="product-grid" id="product-grid"></div>
+    <!-- Magnet Grades - Card Style -->
+    <section class="grades-section" style="padding:4rem 1rem; background:transparent;">
+      <div class="container" style="max-width:1100px; margin:auto;">
+        <h2 style="text-align:center;">Available Grades & Series</h2>
+        <p style="text-align:center; color:var(--muted); margin-bottom:2.5rem;">
+          Our magnets are available in the following series and grades to suit every performance need.
+        </p>
+
+        <div class="grade-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.5rem;">
+          <div class="grade-card">
+            <h3>N Series</h3>
+            <p>N35, N38, N40, N42, N45, N48, N50, N52, N54</p>
+          </div>
+          <div class="grade-card">
+            <h3>M Series</h3>
+            <p>N35M, N38M, N40M, N42M, N45M, N48M, N50M, N52M</p>
+          </div>
+          <div class="grade-card">
+            <h3>H Series</h3>
+            <p>N33H, N35H, N38H, N40H, N42H, N45H, N48H, N50H, N52H</p>
+          </div>
+          <div class="grade-card">
+            <h3>SH Series</h3>
+            <p>N35SH, N38SH, N40SH, N42SH, N45SH, N48SH, N50SH</p>
+          </div>
+          <div class="grade-card">
+            <h3>UH Series</h3>
+            <p>N33UH, N35UH, N38UH, N40UH, N42UH, N45UH, N48UH</p>
+          </div>
+          <div class="grade-card">
+            <h3>EH Series</h3>
+            <p>N28EH, N30EH, N33EH, N35EH, N38EH, N40EH, N42EH, N45EH</p>
+          </div>
+          <div class="grade-card">
+            <h3>TH Series</h3>
+            <p>N30TH, N33TH, N35TH, N38TH</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Quality Standards -->
+    <section class="quality-section" style="text-align:center; padding:4rem 1rem; background:var(--card); border-top:1px solid rgba(11,17,36,0.06);">
+      <h2>Quality & Standards</h2>
+      <p style="max-width:650px; margin:1rem auto; color:var(--muted);">
+        Every magnetic component is crafted with a focus on precision and reliability, following internationally recognized methodologies.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; margin-top:2rem;">
+        <div class="quality-item">APQP</div>
+        <div class="quality-item">FMEA</div>
+        <div class="quality-item">MSA</div>
+        <div class="quality-item">SPC</div>
+        <div class="quality-item">DFSS</div>
+        <div class="quality-item">DOE</div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align:center; padding:4rem 1rem;">
+      <h3>Need custom magnetic solutions?</h3>
+      <p>Our engineering team delivers tailored magnet assemblies for automotive and industrial innovation.</p>
+      <a href="contact.html" class="btn" style="margin-top:1rem;">Contact Us</a>
     </section>
   </main>
 
