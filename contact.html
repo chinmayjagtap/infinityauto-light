@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Infinity Auto Comp</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="bg-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/infinitylogo-removebg-preview.png" alt="Infinity Auto Comp logo" />
+        <span>Infinity Auto Comp</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link cta">Contact</a>
+      </nav>
+
+      <div id="hamburger" class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" class="overlay"></div>
+  </header>
+
+  <main class="container contact-page fade-up">
+    <section class="section-header">
+      <h1>Contact Us</h1>
+      <p>Send us a message and our sales team will get back to you.</p>
+    </section>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="contact-form" onsubmit="submitContact(event)">
+        <label>
+          Name
+          <input required name="name" />
+        </label>
+        <label>
+          Company
+          <input name="company" />
+        </label>
+        <label>
+          Email
+          <input required type="email" name="email" />
+        </label>
+        <label>
+          Message
+          <textarea required name="message" rows="6"></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+        <p class="form-note">This form is a demo; integrate a backend or email provider for production.</p>
+      </form>
+
+      <div class="contact-info fade-up">
+        <h3>Office</h3>
+        <p>
+          Infinity Auto Comp<br/>
+          Ground Floor, Block G,<br/>
+          Shramdeep Housing Society, Sambhaji Nagar,<br/>
+          Near Ganesh Temple, MIDC Chinchwad Pune,<br/>
+          Pimpri Chinchwad-411019,<br/>
+          Maharashtra, India
+        </p>
+        <p>
+          Email: <a href="mailto:infinityautocomp1@gmail.com">infinityautocomp1@gmail.com</a><br/>
+          Phone: <a href="tel:+918044012533">+91 80440 12533</a>
+        </p>
+
+        <div class="map-placeholder fade-up">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472.5731740691361!2d73.83331995962584!3d18.63770918648297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b873d70299e5%3A0x8d3da0a24c3d93b6!2sEL-11%2C%20MIDC%2C%20Bhosari%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411026!5e0!3m2!1sen!2sin!4v1761902882623!5m2!1sen!2sin" 
+            width="100%" height="300" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer fade-up">
+    <div class="container footer-grid">
+      <div>
+        <h4>Infinity Auto Comp</h4>
+        <p>Precision auto spare parts manufacturer.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:infinityautocomp1@gmail.com">infinityautocomp1@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918044012533">+91 80440 12533</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="products.html">Products</a><br/>
+        <a href="about.html">About</a><br/>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>
+        © <strong>Infinity Auto Comp</strong> — All rights reserved.
+        <span class="developer-credit">
+          | Developed by <strong>Sameep Rajput</strong> & <strong>Chinmay Jagtap</strong>
+        </span>
+      </small>
+    </div>
+  </footer>  
+</body>
+</html>
