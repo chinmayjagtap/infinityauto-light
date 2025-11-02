@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magnetic Products – Infinity Auto Comp</title>
+  <title>Infinity Auto Comp</title>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <!-- Animated Background -->
   <div class="bg-orbs">
     <div class="orb orb1"></div>
     <div class="orb orb2"></div>
@@ -23,11 +22,25 @@
       </a>
       <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
         <a href="about.html" class="nav-link">About</a>
-        <a href="products.html" class="nav-link active">Products</a>
         <a href="contact.html" class="nav-link cta">Contact</a>
       </nav>
+
+      <div id="hamburger" class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
+
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" class="overlay"></div>
   </header>
 
   <main>
